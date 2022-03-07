@@ -216,7 +216,7 @@ bodyContent.insertAdjacentHTML("beforeend", proactiveChatBtn);
 // console.log("From IXP");
 
 const changePhonenumber = (newNumber) => {
-  const regex = /1-888-829-8589/g;
+  const regex = /1[–|-]888[–|-]829[–|-]8589/g;
   document.body.innerHTML = document.body.innerHTML.replace(regex, newNumber);
 };
 
