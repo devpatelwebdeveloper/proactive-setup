@@ -9,15 +9,15 @@ import "./styles.css";
 // </div>
 // `;
 
-window.lpOverride = "cavariant";
+window.lpOverride = "cavarianttwo";
 
 //Chat Div Setup
 
-const bodyContent = document.body;
-const proactiveChatBtn = `<div id="ca-sales-variant-bottom-right"></div>
+var bodyContent = document.body;
+var proactiveChatBtn = `<div id="ca-sales-variant-bottom-right"></div>
 <div id="ca-sales-mobile"></div>`;
 
-const newModal = `<style>
+var newModal = `<style>
   .hide-modal {
     display: none;
   }
@@ -200,24 +200,18 @@ const newModal = `<style>
 </div>`;
 
 bodyContent.insertAdjacentHTML("beforeend", proactiveChatBtn);
-// bodyContent.insertAdjacentHTML("beforeend", newModal);
+bodyContent.insertAdjacentHTML("beforeend", newModal);
+// console.log("DomLoaded");
 
-// const proActiveModal = document.getElementById("proactive-chat-modal");
+var proActiveModal = document.getElementById("proactive-chat-modal");
 
-// setTimeout(() => {
-//   proActiveModal.classList.remove("hide-modal");
-//   console.log("removed class");
-// }, 5000);
-// setTimeout(() => {
-//   proActiveModal.classList.add("hide-modal");
-//   console.log("added class");
-// }, 10000);
+setTimeout(() => {
+  proActiveModal.classList.remove("hide-modal");
+  console.log("removed class");
+}, 5000);
+setTimeout(() => {
+  proActiveModal.classList.add("hide-modal");
+  console.log("added class");
+}, 10000);
 
-// console.log("From IXP");
-
-const changePhonenumber = (newNumber) => {
-  const regex = /1-888-829-8589/g;
-  document.body.innerHTML = document.body.innerHTML.replace(regex, newNumber);
-};
-
-changePhonenumber("1-844-437-2629");
+console.log("From IXP");
