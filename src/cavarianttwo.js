@@ -164,7 +164,7 @@ var newModal = `<style>
     margin-bottom: 40px;
   }
 </style>
-<div class="proactive-chat-modal hide-modal" id="proactive-chat-modal">
+<div class="proactive-chat-modal " id="proactive-chat-modal">
   <!--   Close btn for modal -->
   <div class="close-btn">
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,13 +205,13 @@ bodyContent.insertAdjacentHTML("beforeend", newModal);
 
 var proActiveModal = document.getElementById("proactive-chat-modal");
 
-setTimeout(() => {
-  proActiveModal.classList.remove("hide-modal");
-  console.log("removed class");
-}, 5000);
-setTimeout(() => {
-  proActiveModal.classList.add("hide-modal");
-  console.log("added class");
-}, 10000);
+// setTimeout(() => {
+//   proActiveModal.classList.remove("hide-modal");
+//   console.log("removed class");
+// }, 5000);
+// setTimeout(() => {
+//   proActiveModal.classList.add("hide-modal");
+//   console.log("added class");
+// }, 10000);
 
 console.log("From IXP");

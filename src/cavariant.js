@@ -164,7 +164,7 @@ const newModal = `<style>
     margin-bottom: 40px;
   }
 </style>
-<div class="proactive-chat-modal hide-modal" id="proactive-chat-modal">
+<div class="proactive-chat-modal" id="proactive-chat-modal">
   <!--   Close btn for modal -->
   <div class="close-btn">
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
